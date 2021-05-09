@@ -6,7 +6,7 @@ import ExpensesFilter from './ExpensesFilter';
 const Expenses = (props) => {
 
   const onSelectedYearHandler = selectedYear => {
-    console.log(selectedYear);
+    props.onSelectedYear(selectedYear);
   };
 
   return (
